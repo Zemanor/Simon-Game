@@ -1,0 +1,368 @@
+/*Mobile first flex layout classes*/
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+.col {
+    flex: 1;
+    margin: 0.6em;
+    /*important*/
+    
+    padding: 0.6em;
+}
+@media screen and (min-width: 500px) {
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+}
+/* ----->>> $Common Css Classes<<<-----*/
+
+.textCenter {
+    text-align: center;
+}
+.marginZero {
+    margin: 0 auto;
+}
+.grow {} .grow:hover {
+    transform: scale(1.1);
+}
+.bold {
+    font-weight: bold;
+}
+.openSans {
+    font-family: 'Open Sans', sans-serif;
+}
+.red {
+    border: 1px solid red;
+}
+.blue {
+    border: 1px solid blue;
+}
+.green {
+    border: 1px solid green;
+}
+.simonFont {
+    font-family: 'Russo One', sans-serif;
+}
+/*---end---*/
+/*gray #A3A7A8 */
+
+.ctnOuter {
+    width: 750px;
+    height: 750px;
+    background-color: #181818;
+    margin: 0 auto;
+    margin-top: 0.3em;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px #888888;
+}
+.ctnHorizontal {
+    z-index: 3;
+    width: 730px;
+    height: 50px;
+    background-color: #181818;
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 350px;
+    margin-left: 10px;
+}
+.ctnVertical {
+    z-index: 3;
+    width: 50px;
+    height: 730px;
+    background-color: #181818;
+    position: absolute;
+    margin: 0 auto;
+    margin-left: 350px;
+    margin-top: 10px;
+}
+.ctn {
+    border: 1px solid black;
+    width: 650px;
+    height: 650px;
+    background-color: #181818;
+    margin: 0 auto;
+    margin-top: 3em;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.quadrant {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.topLeftQuadrant {
+    background-color: #02B639;
+}
+.topRightQuadrant {
+    float: right;
+    background-color: #E42311;
+}
+.bottomLeftQuadrant {
+    background-color: #FDF100;
+}
+.bottomRightQuadrant {
+    float: right;
+    background-color: #0194F4;
+}
+.btnDetails {
+    border: 1px solid #fff;
+}
+.centerCircleQuadrant {
+    background-color: #181818;
+    height: 320px;
+    width: 320px;
+    z-index: 4;
+    margin: 0 auto;
+    position: absolute;
+    margin-left: 164.5px;
+    border-radius: 50%;
+    margin-top: 160px;
+}
+.controlBox {
+    height: 250px;
+    width: 250px;
+    background-color: #D4D3D8;
+    margin: 0 auto;
+    margin-top: 2.1em;
+    border-radius: 50%;
+    text-align: center;
+}
+.controlBoxArch {
+    position: absolute;
+    margin-left: 7.9px;
+    margin-top: 7px;
+    width: 235px;
+    height: 117.5px;
+    background-color: #191919;
+    border-top-left-radius: 123.75px;
+    border-top-right-radius: 123.75px;
+    background: #000000;
+    /* Old browsers */
+    
+    background: -moz-linear-gradient(left, #000000 -1%, #4c4c4c 0%, #333333 0%, #000000 19%, #000000 30%, #2b2b2b 48%, #2b2b2b 48%, #111111 60%, #1c1c1c 75%, #131313 87%);
+    /* FF3.6-15 */
+    
+    background: -webkit-linear-gradient(left, #000000 -1%, #4c4c4c 0%, #333333 0%, #000000 19%, #000000 30%, #2b2b2b 48%, #2b2b2b 48%, #111111 60%, #1c1c1c 75%, #131313 87%);
+    /* Chrome10-25,Safari5.1-6 */
+    
+    background: linear-gradient(to right, #000000 -1%, #4c4c4c 0%, #333333 0%, #000000 19%, #000000 30%, #2b2b2b 48%, #2b2b2b 48%, #111111 60%, #1c1c1c 75%, #131313 87%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#131313', GradientType=1);
+    /* IE6-9 */
+}
+.gameLogo {
+    color: #D4D3D8;
+    padding-top: 30px;
+    padding-left: 8px;
+    font-size: 3.5em;
+    display: inline-block;
+}
+.tm {
+    margin-left: 2px;
+    margin-top: 10px;
+    display: inline;
+    color: #D4D3D8;
+    font-size: 10px;
+}
+.buttonHub {
+    background-color: #D4D3D8;
+    width: 237px;
+    height: 150px;
+    z-index: 5;
+    position: absolute;
+    margin-left: 0.45em;
+    border-bottom-right-radius: 123.75px;
+    border-bottom-left-radius: 123.75px;
+    margin-top: 6em;
+}
+.display {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #350000;
+    width: 70px;
+    height: 50px;
+    color: #CC0000;
+    font-weight: bold;
+    font-size: 2em;
+    border-radius: 12px;
+    text-align: center;
+    margin-left: 0.3em;
+    padding-top: 9px;
+    border: 2px ridge #000;
+}
+.btnLine {
+    margin-top: 0.5em;
+}
+.btn {
+    background-color: red;
+    border: 4px solid black;
+    border-radius: 35px;
+    width: 35px;
+    height: 35px;
+    margin: 0 auto 3px auto;
+    cursor: pointer;
+    outline: none;
+}
+.btn:active {
+    border: 5px solid black;
+    box-shadow: none;
+}
+.btn-Strict {
+    background-color: #FDF100;
+    margin-left: -0.5em;
+    margin-top: 0.8em;
+}
+.btn-Start {
+    background-color: red;
+    margin-left: 2em;
+    margin-top: 0.8em;
+}
+.strictEnabled {
+    color: #B20000 !important;
+}
+.dot {
+    position: absolute;
+    z-index: 11;
+    margin-left: 5.63em;
+    margin-top: 0.3em;
+    font-size: 0.7em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: #330000;
+}
+.shdw {
+    -webkit-box-shadow: 3px 3px 8px 0px rgba(50, 50, 50, 0.81);
+    -moz-box-shadow: 3px 3px 8px 0px rgba(50, 50, 50, 0.81);
+    box-shadow: 3px 3px 8px 0px rgba(50, 50, 50, 0.81);
+}
+.buttonHub-Labels {
+    width: 235px;
+    height: 25px;
+    font-weight: bold;
+    font-family: 'Play', sans-serif;
+    padding-top: 0.2em;
+}
+.count {
+    margin-right: 10px;
+    margin-left: 23px;
+}
+.start {
+    margin-left: 28px;
+}
+.strict {
+    margin-left: 24.5px;
+}
+.clr {} .clr:hover {
+    background-color: grey;
+}
+/*zoom @*/
+
+@media screen and (max-width: 580px) {
+    html {
+        zoom: 0.6;
+    }
+}
+@media screen and (max-width: 360px) {
+    html {
+        zoom: 0.55;
+    }
+}
+/*-------------------Toggle Switch Css-------------------*/
+
+.on-off-switch {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+}
+.on-off-switch + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+    /* needs vendor */
+    
+    background: linear-gradient(to right, #181818 0%, #181818 49%, #c9c9c9 49%, #f89406 49%, #ffffff 50%, #e6e6e6 51%, #e6e6e6 100%);
+    box-shadow: 0 1px 3px #bababa;
+    padding: 2px;
+    width: 97px;
+    height: 30px;
+    border-radius: 4px;
+}
+input.on-off-switch + label:before,
+input.on-off-switch + label:after {
+    color: #fff;
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 0px;
+    bottom: 1px;
+    content: "";
+    vertical-align: bottom;
+}
+input.on-off-switch + label:before {
+    right: 1px;
+    /*background: linear-gradient(to bottom, #f89406, #fbb450);*/
+    
+    border-radius: 4px;
+    content: "ON\00a0\00a0\00a0\00a0\00a0\00a0\00a0OFF";
+    padding-top: 8px;
+    padding-left: 14px;
+    linear-gradient(to right, #fbb450 0%, #f89406 49%, #c9c9c9 49%, #f89406 49%, #ffffff 50%, #ffffff 51%, #e6e6e6 100%)
+}
+input.on-off-switch + label:after {
+    width: 51px;
+    height: 34px;
+    margin-top: -1px;
+    margin-left: 49px;
+    background-color: #f5f5f5;
+    /* slider ridge color */
+    
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    /* needs vendor */
+    
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    /* needs vendor */
+    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: margin 0.4s;
+}
+input.on-off-switch:checked + label:before {
+    color: #333333;
+    transition: color .5s;
+}
+input.on-off-switch:checked + label:after {
+    margin-left: 0px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    /* needs vendor */
+    
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    /* needs vendor */
+}
+.powerBtn {
+    margin-left: 8em;
+    font-size: 0.85em;
+    zoom: 0.75;
+    margin-top: 1em;
+}
+.flashGreen {
+    background-color: #02F24A;
+}
+.flashRed {
+    background-color: #FF311F;
+}
+.flashBlue {
+    background-color: #34ADFE;
+}
+.flashYellow {
+    background-color: #FFF870;
+}
