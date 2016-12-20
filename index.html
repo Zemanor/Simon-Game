@@ -1,0 +1,80 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Simon Game</title>
+    <meta name="Simon Game Remake" content="Simon Game">
+    <meta name="Greg Small" content="Simon Game">
+
+    <link rel="stylesheet" href="resources/css/reset.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/style.css?20161008613">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- body content here -->
+    <div class="ctnOuter">
+        <div class="ctnHorizontal"></div>
+        <div class="ctnVertical"></div>
+
+        <div class="ctn">
+            <div class="centerCircleQuadrant">
+                <div class="controlBox simonFont">
+                    <div class="controlBoxArch">
+                        <p class="gameLogo">simon
+                            <p class="tm">&#153;</p>
+                        </p>
+                    </div>
+                    <div class="buttonHub">
+                         <span class="dot">&#9679;</span>
+                        <div class="row btnLine">
+                            <span class="display">--</span>
+                            <button class="btn btn-Start shdw"></button>
+                            <button class="btn btn-Strict shdw"></button>
+                        </div>
+
+                        <div class="buttonHub-Labels row">
+                            <p class="count">Count</p>
+                            <p class="start">Start</p>
+                            <p class="strict">Strict</p>
+                        </div>
+
+                        <div class="powerBtn row">
+                            <input id="on-off-toggle" class="on-off-switch on-off-round" type="checkbox" />
+                            <label for="on-off-toggle"></label>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="quadrant-Green" class="btnDetails quadrant topLeftQuadrant"></div>
+            <div id="quadrant-Red" class="btnDetails quadrant topRightQuadrant"></div>
+            <div id="quadrant-Yellow" class="btnDetails quadrant bottomLeftQuadrant"></div>
+            <div id="quadrant-Blue" class="btnDetails quadrant bottomRightQuadrant"></div>
+        </div>
+
+
+    </div>
+
+    <audio id="audio1" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></audio>
+    <audio id="audio2" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></audio>
+    <audio id="audio3" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></audio>
+    <audio id="audio4" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></audio>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="resources/js/components.js"></script>
+    <script src="resources/js/scripts.js"></script>
+</body>
+
+</html>
